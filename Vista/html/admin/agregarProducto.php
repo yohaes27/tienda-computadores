@@ -30,6 +30,7 @@
                 <input name="Precio" type="text" placeholder="precio" required>
                 <select name="categoria" required>
                     <option value="">Seleccionar categoría</option>
+
                     <?php
                     while ($fila = $result->fetch_object()) {
                     ?>
@@ -38,11 +39,9 @@
                     }
                     ?>
                 </select>
-<<<<<<< HEAD
-                <input name="imagen" type="file" required>
-=======
+
                 <input name="imagen" input type="file" multiple required>
->>>>>>> 61e54e9 (canbios en el pormulario y la presentasion)
+
                 <button type="submit">Guardar Producto</button>
             </form>
         </div>
