@@ -17,10 +17,17 @@
         <div class="admin-section">
             <h3>Productos</h3>
             <form action="index.php?accion=agregarProducto" class="form-admin" method="post" enctype="multipart/form-data">
-                <input name="nombreProducto" type="text" placeholder="Nombre del producto" required>
-                <input name="precio" type="number" placeholder="Precio" required>
-                <input name="talla" type="text" placeholder="Talla" required>
-                <input name="descripcion" type="text" placeholder="Descripcion" required>
+                <input name="marcaProducto" type="text" placeholder="Marca del computador" required>
+                <input name="modeloProducto" type="text" placeholder="Modelo del computador" required>
+                <!-- tipo mediante selec -->
+                <select name="tipo" id="tipo">
+                    <option value="">Selecione un tipo</option>
+                    <option value="computadores">computadores</option>
+                    <option value="repuesto">repuesto</option>
+                </select>
+
+                <input name="especificaciones" type="text" placeholder="Especificaciones del computador" required>
+                <input name="Precio" type="text" placeholder="precio" required>
                 <select name="categoria" required>
                     <option value="">Seleccionar categoría</option>
                     <?php
@@ -31,7 +38,11 @@
                     }
                     ?>
                 </select>
+<<<<<<< HEAD
                 <input name="imagen" type="file" required>
+=======
+                <input name="imagen" input type="file" multiple required>
+>>>>>>> 61e54e9 (canbios en el pormulario y la presentasion)
                 <button type="submit">Guardar Producto</button>
             </form>
         </div>

@@ -26,10 +26,12 @@
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Nombre</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Tipo</th>
+                        <th>Especifecaciones</th>
                         <th>Categoría</th>
                         <th>Precio</th>
-                        <th>Talla</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
@@ -38,11 +40,22 @@
                 ?>
                     <tbody>
                         <tr>
+
+                            <!-- id -->
                             <td><?php echo $fila->id ?></td>
-                            <td><?php echo $fila->nombre_productos ?></td>
-                            <td><?php echo $fila->nombre_categorias ?></td>
-                            <td><?php echo $fila->precio ?></td>
-                            <td><?php echo $fila->talla ?></td>
+                            <!-- marca -->
+                            <td><?php echo $fila->marca_productos; ?></td>
+                            <!-- Modelo -->
+                            <td><?php echo $fila->modelo_producto; ?></td>
+                            <!-- tipo -->
+                            <td><?php echo $fila->tipo ?></td>
+                            <!-- Especifecaciones -->
+                            <td><?php echo $fila->especificasiones_producto; ?></td>
+                            <!-- Categoría -->
+                            <td> <?php echo $fila->nombre_categorias  ?></td>
+                            <!-- Precio -->
+                            <td><?php echo $fila->precio; ?></td>
+                            <!-- aciones -->
                             <td>
                                 <button><a href="index.php?accion=verEditar&id=<?php echo $fila->id ?>">Editar</a></button>
                                 <button><a href="index.php?accion=eliminar&id=<?php echo $fila->id ?>">Eliminar</a></button>

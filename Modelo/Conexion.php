@@ -5,7 +5,7 @@
         private $sql;
         private $result;
         public function abrir(){
-            $this->mySQLI = new mysqli("localhost", "root", "", "tenis");
+            $this->mySQLI = new mysqli("localhost", "root", "", "computadores");
             if($this->mySQLI->connect_error){
                 throw new Exception("Error al conectar la DB: " .$this->mySQLI->connect_error);
             }

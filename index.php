@@ -37,10 +37,12 @@ if (!isset($_SESSION["usuario"])) {
                 }
             }
             $controlador->agregarProducto(
-                $_POST["nombreProducto"],
-                $_POST["precio"],
-                $_POST["talla"],
-                $_POST["descripcion"],
+
+                $_POST["marcaProducto"],
+                $_POST["modeloProducto"],
+                $_POST["tipo"],
+                $_POST["especificaciones"],
+                $_POST["Precio"],
                 $_POST["categoria"],
                 $imagen
             );

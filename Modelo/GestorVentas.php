@@ -36,7 +36,7 @@
         public function verProductos($inicio ){
             $conexion= new Conexion();
             $conexion->abrir();
-            $sql="SELECT *, categorias.nombre as nombre_categorias, productos.nombre as nombre_productos, categorias.id as id_categorias from categorias join productos on categorias.id=productos.id_categoria limit $inicio, 6";
+            $sql="SELECT *, categorias.nombre as nombre_categorias, productos.marca as marca_productos, productos.id as id , productos.modelo as modelo_producto , productos.tipo , productos.especificaciones  AS especificaciones_producto , productos.precio AS precio_produdto , categorias.id as id_categorias from categorias join productos on categorias.id=productos.id_categoria limit $inicio, 6";
             $conexion->consulta($sql);
             $result=$conexion->obtenerResult();
             $conexion->cerrar();

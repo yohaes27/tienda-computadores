@@ -36,7 +36,11 @@ class Controlador
 
         require_once "Vista/html/admin/agregarProducto.php";
     }
+<<<<<<< HEAD
     public function agregarProducto($nombreProducto, $precio, $talla, $descripcion, $categoria, $imagen)
+=======
+    public function agregarProducto($marcaProducto, $modeloProducto, $tipo, $especificaciones, $Precio, $)
+>>>>>>> 61e54e9 (canbios en el pormulario y la presentasion)
     {
         $producto = new Producto($nombreProducto, $precio, $talla, $descripcion, $categoria, $imagen);
         $gestorVentas = new GestorVentas();
